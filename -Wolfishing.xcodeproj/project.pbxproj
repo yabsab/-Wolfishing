@@ -12,26 +12,8 @@
 		4ED7D54F1EC4028500A4F561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED7D54D1EC4028500A4F561 /* Main.storyboard */; };
 		4ED7D5511EC4028500A4F561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED7D5501EC4028500A4F561 /* Assets.xcassets */; };
 		4ED7D5541EC4028500A4F561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED7D5521EC4028500A4F561 /* LaunchScreen.storyboard */; };
-		4ED7D55F1EC4028500A4F561 /* _WolfishingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED7D55E1EC4028500A4F561 /* _WolfishingTests.swift */; };
-		4ED7D56A1EC4028500A4F561 /* _WolfishingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED7D5691EC4028500A4F561 /* _WolfishingUITests.swift */; };
+		4ED7D57A1EC4041F00A4F561 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED7D5791EC4041F00A4F561 /* MapView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4ED7D55B1EC4028500A4F561 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4ED7D53E1EC4028500A4F561 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4ED7D5451EC4028500A4F561;
-			remoteInfo = "-Wolfishing";
-		};
-		4ED7D5661EC4028500A4F561 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4ED7D53E1EC4028500A4F561 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4ED7D5451EC4028500A4F561;
-			remoteInfo = "-Wolfishing";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4ED7D5461EC4028500A4F561 /* -Wolfishing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "-Wolfishing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,30 +23,11 @@
 		4ED7D5501EC4028500A4F561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ED7D5531EC4028500A4F561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ED7D5551EC4028500A4F561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4ED7D55A1EC4028500A4F561 /* -WolfishingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "-WolfishingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4ED7D55E1EC4028500A4F561 /* _WolfishingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _WolfishingTests.swift; sourceTree = "<group>"; };
-		4ED7D5601EC4028500A4F561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4ED7D5651EC4028500A4F561 /* -WolfishingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "-WolfishingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4ED7D5691EC4028500A4F561 /* _WolfishingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _WolfishingUITests.swift; sourceTree = "<group>"; };
-		4ED7D56B1EC4028500A4F561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED7D5791EC4041F00A4F561 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4ED7D5431EC4028500A4F561 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4ED7D5571EC4028500A4F561 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4ED7D5621EC4028500A4F561 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,8 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				4ED7D5481EC4028500A4F561 /* -Wolfishing */,
-				4ED7D55D1EC4028500A4F561 /* -WolfishingTests */,
-				4ED7D5681EC4028500A4F561 /* -WolfishingUITests */,
 				4ED7D5471EC4028500A4F561 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				4ED7D5461EC4028500A4F561 /* -Wolfishing.app */,
-				4ED7D55A1EC4028500A4F561 /* -WolfishingTests.xctest */,
-				4ED7D5651EC4028500A4F561 /* -WolfishingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,8 +56,8 @@
 		4ED7D5481EC4028500A4F561 /* -Wolfishing */ = {
 			isa = PBXGroup;
 			children = (
-				4ED7D5491EC4028500A4F561 /* AppDelegate.swift */,
-				4ED7D54B1EC4028500A4F561 /* ViewController.swift */,
+				4ED7D5771EC403EF00A4F561 /* 0)Login */,
+				4ED7D5781EC4040500A4F561 /* 02)MapView */,
 				4ED7D54D1EC4028500A4F561 /* Main.storyboard */,
 				4ED7D5501EC4028500A4F561 /* Assets.xcassets */,
 				4ED7D5521EC4028500A4F561 /* LaunchScreen.storyboard */,
@@ -107,22 +66,21 @@
 			path = "-Wolfishing";
 			sourceTree = "<group>";
 		};
-		4ED7D55D1EC4028500A4F561 /* -WolfishingTests */ = {
+		4ED7D5771EC403EF00A4F561 /* 0)Login */ = {
 			isa = PBXGroup;
 			children = (
-				4ED7D55E1EC4028500A4F561 /* _WolfishingTests.swift */,
-				4ED7D5601EC4028500A4F561 /* Info.plist */,
+				4ED7D5491EC4028500A4F561 /* AppDelegate.swift */,
+				4ED7D54B1EC4028500A4F561 /* ViewController.swift */,
 			);
-			path = "-WolfishingTests";
+			name = "0)Login";
 			sourceTree = "<group>";
 		};
-		4ED7D5681EC4028500A4F561 /* -WolfishingUITests */ = {
+		4ED7D5781EC4040500A4F561 /* 02)MapView */ = {
 			isa = PBXGroup;
 			children = (
-				4ED7D5691EC4028500A4F561 /* _WolfishingUITests.swift */,
-				4ED7D56B1EC4028500A4F561 /* Info.plist */,
+				4ED7D5791EC4041F00A4F561 /* MapView.swift */,
 			);
-			path = "-WolfishingUITests";
+			name = "02)MapView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,42 +103,6 @@
 			productReference = 4ED7D5461EC4028500A4F561 /* -Wolfishing.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4ED7D5591EC4028500A4F561 /* -WolfishingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4ED7D5711EC4028500A4F561 /* Build configuration list for PBXNativeTarget "-WolfishingTests" */;
-			buildPhases = (
-				4ED7D5561EC4028500A4F561 /* Sources */,
-				4ED7D5571EC4028500A4F561 /* Frameworks */,
-				4ED7D5581EC4028500A4F561 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4ED7D55C1EC4028500A4F561 /* PBXTargetDependency */,
-			);
-			name = "-WolfishingTests";
-			productName = "-WolfishingTests";
-			productReference = 4ED7D55A1EC4028500A4F561 /* -WolfishingTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4ED7D5641EC4028500A4F561 /* -WolfishingUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4ED7D5741EC4028500A4F561 /* Build configuration list for PBXNativeTarget "-WolfishingUITests" */;
-			buildPhases = (
-				4ED7D5611EC4028500A4F561 /* Sources */,
-				4ED7D5621EC4028500A4F561 /* Frameworks */,
-				4ED7D5631EC4028500A4F561 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4ED7D5671EC4028500A4F561 /* PBXTargetDependency */,
-			);
-			name = "-WolfishingUITests";
-			productName = "-WolfishingUITests";
-			productReference = 4ED7D5651EC4028500A4F561 /* -WolfishingUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,18 +117,6 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = HKUW29KE3M;
 						ProvisioningStyle = Automatic;
-					};
-					4ED7D5591EC4028500A4F561 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = HKUW29KE3M;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 4ED7D5451EC4028500A4F561;
-					};
-					4ED7D5641EC4028500A4F561 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = HKUW29KE3M;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 4ED7D5451EC4028500A4F561;
 					};
 				};
 			};
@@ -224,8 +134,6 @@
 			projectRoot = "";
 			targets = (
 				4ED7D5451EC4028500A4F561 /* -Wolfishing */,
-				4ED7D5591EC4028500A4F561 /* -WolfishingTests */,
-				4ED7D5641EC4028500A4F561 /* -WolfishingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,20 +149,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4ED7D5581EC4028500A4F561 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4ED7D5631EC4028500A4F561 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -263,40 +157,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED7D54C1EC4028500A4F561 /* ViewController.swift in Sources */,
+				4ED7D57A1EC4041F00A4F561 /* MapView.swift in Sources */,
 				4ED7D54A1EC4028500A4F561 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4ED7D5561EC4028500A4F561 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4ED7D55F1EC4028500A4F561 /* _WolfishingTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4ED7D5611EC4028500A4F561 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4ED7D56A1EC4028500A4F561 /* _WolfishingUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4ED7D55C1EC4028500A4F561 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4ED7D5451EC4028500A4F561 /* -Wolfishing */;
-			targetProxy = 4ED7D55B1EC4028500A4F561 /* PBXContainerItemProxy */;
-		};
-		4ED7D5671EC4028500A4F561 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4ED7D5451EC4028500A4F561 /* -Wolfishing */;
-			targetProxy = 4ED7D5661EC4028500A4F561 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4ED7D54D1EC4028500A4F561 /* Main.storyboard */ = {
@@ -359,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -439,64 +305,6 @@
 			};
 			name = Release;
 		};
-		4ED7D5721EC4028500A4F561 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = HKUW29KE3M;
-				INFOPLIST_FILE = "-WolfishingTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JY.-WolfishingTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/-Wolfishing.app/-Wolfishing";
-			};
-			name = Debug;
-		};
-		4ED7D5731EC4028500A4F561 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = HKUW29KE3M;
-				INFOPLIST_FILE = "-WolfishingTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JY.-WolfishingTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/-Wolfishing.app/-Wolfishing";
-			};
-			name = Release;
-		};
-		4ED7D5751EC4028500A4F561 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = HKUW29KE3M;
-				INFOPLIST_FILE = "-WolfishingUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JY.-WolfishingUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "-Wolfishing";
-			};
-			name = Debug;
-		};
-		4ED7D5761EC4028500A4F561 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = HKUW29KE3M;
-				INFOPLIST_FILE = "-WolfishingUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "JY.-WolfishingUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "-Wolfishing";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,22 +324,7 @@
 				4ED7D5701EC4028500A4F561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		4ED7D5711EC4028500A4F561 /* Build configuration list for PBXNativeTarget "-WolfishingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4ED7D5721EC4028500A4F561 /* Debug */,
-				4ED7D5731EC4028500A4F561 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		4ED7D5741EC4028500A4F561 /* Build configuration list for PBXNativeTarget "-WolfishingUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4ED7D5751EC4028500A4F561 /* Debug */,
-				4ED7D5761EC4028500A4F561 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
