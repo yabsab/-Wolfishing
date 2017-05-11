@@ -13,6 +13,7 @@
 		4ED7D5511EC4028500A4F561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ED7D5501EC4028500A4F561 /* Assets.xcassets */; };
 		4ED7D5541EC4028500A4F561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED7D5521EC4028500A4F561 /* LaunchScreen.storyboard */; };
 		4ED7D57A1EC4041F00A4F561 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED7D5791EC4041F00A4F561 /* MapView.swift */; };
+		4ED7D57D1EC404BC00A4F561 /* JoinMemeberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED7D57C1EC404BC00A4F561 /* JoinMemeberView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4ED7D5531EC4028500A4F561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ED7D5551EC4028500A4F561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ED7D5791EC4041F00A4F561 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4ED7D57C1EC404BC00A4F561 /* JoinMemeberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinMemeberView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		4ED7D5771EC403EF00A4F561 /* 0)Login */ = {
 			isa = PBXGroup;
 			children = (
+				4ED7D57B1EC4049900A4F561 /* 0-1)JoinMemeber */,
 				4ED7D5491EC4028500A4F561 /* AppDelegate.swift */,
 				4ED7D54B1EC4028500A4F561 /* ViewController.swift */,
 			);
@@ -81,6 +84,14 @@
 				4ED7D5791EC4041F00A4F561 /* MapView.swift */,
 			);
 			name = "02)MapView";
+			sourceTree = "<group>";
+		};
+		4ED7D57B1EC4049900A4F561 /* 0-1)JoinMemeber */ = {
+			isa = PBXGroup;
+			children = (
+				4ED7D57C1EC404BC00A4F561 /* JoinMemeberView.swift */,
+			);
+			name = "0-1)JoinMemeber";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED7D57D1EC404BC00A4F561 /* JoinMemeberView.swift in Sources */,
 				4ED7D54C1EC4028500A4F561 /* ViewController.swift in Sources */,
 				4ED7D57A1EC4041F00A4F561 /* MapView.swift in Sources */,
 				4ED7D54A1EC4028500A4F561 /* AppDelegate.swift in Sources */,
