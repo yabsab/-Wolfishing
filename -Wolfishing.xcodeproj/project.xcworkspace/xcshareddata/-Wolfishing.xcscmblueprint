@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BF6503ADF53C95CD5E6B70E6FBAC28EA7B4F1671",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BF6503ADF53C95CD5E6B70E6FBAC28EA7B4F1671" : 9223372036854775807,
+    "D6EE7267D5392D49D2E5B6368DD72A20D573D460" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DA45FC5E-2260-49FC-BF48-0C9C9DBF8991",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BF6503ADF53C95CD5E6B70E6FBAC28EA7B4F1671" : "-Wolfishing\/",
+    "D6EE7267D5392D49D2E5B6368DD72A20D573D460" : "..\/fishing"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "-Wolfishing",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "-Wolfishing.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yabsab\/-Wolfishing.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BF6503ADF53C95CD5E6B70E6FBAC28EA7B4F1671"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yabsab\/fishing.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D6EE7267D5392D49D2E5B6368DD72A20D573D460"
+    }
+  ]
+}
