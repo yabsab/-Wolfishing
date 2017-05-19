@@ -1,0 +1,6 @@
+framework module Pods__Wolfishing {
+  umbrella header "Pods--Wolfishing-umbrella.h"
+
+  export *
+  module * { export * }
+}

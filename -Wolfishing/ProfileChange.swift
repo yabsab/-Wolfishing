@@ -8,6 +8,9 @@
 
 import UIKit
 import AssetsLibrary
+import RealmSwift
+import Realm
+
 
 
 
@@ -15,7 +18,18 @@ class ProfileChange: UIViewController, UINavigationBarDelegate, UITableViewDeleg
     
     @IBOutlet weak var tbMyinformation : UITableView!
     
-    var arrayfishinginfor: [String] = ["","","","",""]
+    
+    var i = 0
+
+    var check_Adddata_Button : Bool = false
+    
+    
+    
+    let _UserProfileDB = UserProfileDB()
+    
+  
+    var get_arrayfishinginfor : [String] = ["","","","",""]
+    
     var arrayMyinfor: [String] = ["","",""]
     
     var dicInfor : Dictionary <String, String> = [:]
@@ -40,9 +54,16 @@ class ProfileChange: UIViewController, UINavigationBarDelegate, UITableViewDeleg
         
         
         
+        
+        
+        //DB 이름 및 위치
+        
+        
+        //print(Realm.Configuration.defaultConfiguration.fileURL!)
+        
+        
         tbMyinformation.dataSource = self
         tbMyinformation.delegate = self
-        
         
         
         
@@ -56,6 +77,10 @@ class ProfileChange: UIViewController, UINavigationBarDelegate, UITableViewDeleg
         view.addGestureRecognizer(tap)
         
     }
+    
+    
+ 
+    
     
     
     func dismissKeyboard() {
@@ -80,7 +105,7 @@ class ProfileChange: UIViewController, UINavigationBarDelegate, UITableViewDeleg
         
         
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
-        let vc:UIViewController = storyboard.instantiateViewController(withIdentifier: "mainTabView") as UIViewController
+        let vc:UIViewController = storyboard.instantiateViewController(withIdentifier: "MainTabView") as UIViewController
         present (vc, animated: false, completion: nil)
         
         
@@ -96,6 +121,8 @@ class ProfileChange: UIViewController, UINavigationBarDelegate, UITableViewDeleg
     
     
     
+    
+   
     
     
     //table 이미지
@@ -127,7 +154,7 @@ class ProfileChange: UIViewController, UINavigationBarDelegate, UITableViewDeleg
             
             let imageName = UIImage(named: fishinIcon[indexPath.row])
             
-            if (fishinginfor[0] == "낚시대" && fishinginfor[1] == "낚시줄" && fishinginfor[2] == "루어" && fishinginfor[3] == "릴" && fishinginfor[4] == "상태"){
+            if (check_Adddata_Button == false){
                 
                 cell.contentView.addSubview(inputTxFiled)
                 cell.imageView?.image  = imageName
@@ -135,30 +162,23 @@ class ProfileChange: UIViewController, UINavigationBarDelegate, UITableViewDeleg
                 inputTxFiled.clearsOnBeginEditing = true
                 inputTxFiled.font = UIFont(name: "Kailasa", size: 13)
                 inputTxFiled.endEditing(true)
+
+                
+            }else if (check_Adddata_Button == true) {
                 
                 
-                
-                if let textfield  = cell.contentView.subviews[0] as? UITextField {
-                    
-                    
-                    dicInfor = ["test" : textfield.text!]
-                    
-                    Savedata(wowowo: dicInfor)
-                }
-                
-                
-                
-                
-                
-                
-            }else {
-                
-                
-                inputTxFiled.text = fishinginfor[indexPath.row]
+//                inputTxFiled.text = fishinginfor[indexPath.row]
                 cell.contentView.addSubview(inputTxFiled)
                 cell.imageView?.image  = imageName
                 inputTxFiled.font = UIFont(name: "Kailasa", size: 13)
                 inputTxFiled.endEditing(true)
+                
+                
+                if let textfield  = cell.contentView.subviews[0] as? UITextField {
+                    dicInfor = ["test" : textfield.text!]
+                    Savedata(wowowo: dicInfor)
+                }
+                
                 
                 
             }
@@ -210,26 +230,112 @@ class ProfileChange: UIViewController, UINavigationBarDelegate, UITableViewDeleg
     //profile Change 오른쪽 버튼
     
     func setting (_ sender: AnyObject){
-        
+       
         tbMyinformation?.reloadData()
+        check_Adddata_Button = true
+        
+       
+        
         
     }
+    
+    
+    
+    //*---------------------------------------------------------------------------|
+    //|   2016년  5월 15일 DB                                                       |
+    //|                                                                           |
+    //|   구현 : 안재용                                                              |
+    //|                                                                           |
+    //|   내용 : DB 내용 (사용자명(key), 낚시대, 루어, 릴, 낚시줄 ,사용자상태 insert)          |
+    //|                                                                           |
+    //|   기타 : arrayfishinginfor 내용을 배열로 받아서 저장                              |
+    //----------------------------------------------------------------------------*
+  
+    
+    
+    func addDBProfile()  {
+        
+        
+    }
+    
+    
+    
+    
+    
+    // data insert in DB
+    
+    func getTablecellData(getDbDate:NSArray) {
+
+        _UserProfileDB.User = "TEST"  // 사용자 명
+        _UserProfileDB.user_Rod =  getDbDate[0] as! String // 낚시대 정보
+        _UserProfileDB.user_Fishingline = getDbDate[1] as! String// 낚시줄 정보
+        _UserProfileDB.user_Lure = getDbDate[2] as! String
+        _UserProfileDB.user_Reel = getDbDate[3] as! String // 낚시릴 정보
+        _UserProfileDB.user_Infromation = getDbDate[4] as! String // user 상태
+        
+        let realm = try! Realm ()
+        
+        try! realm.write {
+            
+            
+            
+            
+            
+            
+            
+        }
+        
+
+        
+    }
+
+    
+  
+    
+    
     
     
     func Savedata(wowowo : Dictionary<String, Any>){
         
-        var i = 0
+        
+    if (check_Adddata_Button == true){
         
         for value in wowowo.values {
-            arrayfishinginfor[i] = value as! String
-            print("array:\(arrayfishinginfor[i])")
             
+            get_arrayfishinginfor.insert(value as! String, at: i)
+
+           print("i 값 : \(get_arrayfishinginfor[i])" )
+
+           //배열에 값이 역으로 들어감
+        //i 값이 4일 때 배열 값을 DB 함수에 전달
+            if(i == 4){
+                
+            print ("odododod")
+                
+            getTablecellData(getDbDate: get_arrayfishinginfor as NSArray)
+                
+                
+            }
+     
             i += 1
-            
-            print("i:\(i)")
+
             
         }
+            
+  
+            
+        }else {
+                
+            for value in wowowo.values {
+                
+             print("기존 값 : \(value)" )
+
+                
+            }
+   
+        }
         
+       
         
     }
     
@@ -237,21 +343,19 @@ class ProfileChange: UIViewController, UINavigationBarDelegate, UITableViewDeleg
     
     
     
-    // 함수 일단 대기
-    
-    func getTablecellData(test:NSArray) {
-        
-        
-        
-    }
+
     
     
     
     
     
     @IBAction func textField(_ sender: AnyObject) {
+        
         self.view.endEditing(true);
     }
+    
+    
+    
     
     
     
@@ -273,9 +377,6 @@ class ProfileChange: UIViewController, UINavigationBarDelegate, UITableViewDeleg
     
     
     func call_data(data:NSArray){
-        
-        
-        
     }
     
     
@@ -363,17 +464,7 @@ class ProfileChange: UIViewController, UINavigationBarDelegate, UITableViewDeleg
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     func btPhotoPopup(sender: AnyObject){
         
         let alert = UIAlertController(title: nil , message: "프로필 사진 바꾸기", preferredStyle: UIAlertControllerStyle.actionSheet)

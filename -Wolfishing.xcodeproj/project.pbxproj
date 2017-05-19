@@ -27,6 +27,7 @@
 		4E2798851EC5505000CBFFBA /* imReel.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E27987D1EC5505000CBFFBA /* imReel.png */; };
 		4E2798861EC5505000CBFFBA /* imStick.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E27987E1EC5505000CBFFBA /* imStick.png */; };
 		4E2798871EC5505000CBFFBA /* imThread.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E27987F1EC5505000CBFFBA /* imThread.png */; };
+		4E87E9CC1EC987E900E2E6B6 /* DBprofile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E87E9CB1EC987E900E2E6B6 /* DBprofile.swift */; };
 		4ED7D54A1EC4028500A4F561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED7D5491EC4028500A4F561 /* AppDelegate.swift */; };
 		4ED7D54C1EC4028500A4F561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED7D54B1EC4028500A4F561 /* ViewController.swift */; };
 		4ED7D54F1EC4028500A4F561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ED7D54D1EC4028500A4F561 /* Main.storyboard */; };
@@ -70,9 +71,11 @@
 		4ED7D5C61EC408F000A4F561 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED7D5C51EC408F000A4F561 /* QuartzCore.framework */; };
 		4ED7D5C81EC408F700A4F561 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED7D5C71EC408F700A4F561 /* libstdc++.6.tbd */; };
 		4ED7D5CA1EC408FE00A4F561 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED7D5C91EC408FE00A4F561 /* libxml2.tbd */; };
+		A9D3D45B2752A9E119DCCF82 /* Pods__Wolfishing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4469948A9A7623C06D7B78F /* Pods__Wolfishing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		012E4EA458A7BA1A09A6B266 /* Pods--Wolfishing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods--Wolfishing.debug.xcconfig"; path = "Pods/Target Support Files/Pods--Wolfishing/Pods--Wolfishing.debug.xcconfig"; sourceTree = "<group>"; };
 		4E27985D1EC548D200CBFFBA /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		4E27985E1EC548D200CBFFBA /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
 		4E27985F1EC548D200CBFFBA /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
@@ -93,6 +96,7 @@
 		4E27987D1EC5505000CBFFBA /* imReel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imReel.png; path = ../imReel.png; sourceTree = "<group>"; };
 		4E27987E1EC5505000CBFFBA /* imStick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imStick.png; path = ../imStick.png; sourceTree = "<group>"; };
 		4E27987F1EC5505000CBFFBA /* imThread.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imThread.png; path = ../imThread.png; sourceTree = "<group>"; };
+		4E87E9CB1EC987E900E2E6B6 /* DBprofile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBprofile.swift; sourceTree = "<group>"; };
 		4ED7D5461EC4028500A4F561 /* -Wolfishing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "-Wolfishing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED7D5491EC4028500A4F561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ED7D54B1EC4028500A4F561 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 		4ED7D5C71EC408F700A4F561 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		4ED7D5C91EC408FE00A4F561 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		4ED7D5CB1EC4098500A4F561 /* -Wolfishing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "-Wolfishing-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		DF8AC383B537B6C57F0EF3CB /* Pods--Wolfishing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods--Wolfishing.release.xcconfig"; path = "Pods/Target Support Files/Pods--Wolfishing/Pods--Wolfishing.release.xcconfig"; sourceTree = "<group>"; };
+		F4469948A9A7623C06D7B78F /* Pods__Wolfishing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods__Wolfishing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,7 @@
 				4ED7D5C01EC408DB00A4F561 /* OpenGLES.framework in Frameworks */,
 				4ED7D5A31EC408D500A4F561 /* DaumMap.framework in Frameworks */,
 				4ED7D5841EC408AC00A4F561 /* CoreLocation.framework in Frameworks */,
+				A9D3D45B2752A9E119DCCF82 /* Pods__Wolfishing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,12 +216,21 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		4E87E9C61EC97FD900E2E6B6 /* 03-2)DB */ = {
+			isa = PBXGroup;
+			children = (
+				4E87E9CB1EC987E900E2E6B6 /* DBprofile.swift */,
+			);
+			name = "03-2)DB";
+			sourceTree = "<group>";
+		};
 		4ED7D53D1EC4028500A4F561 = {
 			isa = PBXGroup;
 			children = (
 				4ED7D5481EC4028500A4F561 /* -Wolfishing */,
 				4ED7D5471EC4028500A4F561 /* Products */,
 				4ED7D5821EC408AC00A4F561 /* Frameworks */,
+				C5465F3056D74FF56EA25D1B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -282,6 +298,7 @@
 				4ED7D5801EC405BD00A4F561 /* ProfileView.swift */,
 				4E27986D1EC5496100CBFFBA /* cellHeader */,
 				4E2798721EC54B5200CBFFBA /* 03-1)ProfileChangeView */,
+				4E87E9C61EC97FD900E2E6B6 /* 03-2)DB */,
 				4ED7D5CB1EC4098500A4F561 /* -Wolfishing-Bridging-Header.h */,
 			);
 			name = "03)Profile";
@@ -298,6 +315,7 @@
 				4ED7D5BF1EC408DB00A4F561 /* OpenGLES.framework */,
 				4ED7D5851EC408D500A4F561 /* DaumMap.embeddedframework */,
 				4ED7D5831EC408AC00A4F561 /* CoreLocation.framework */,
+				F4469948A9A7623C06D7B78F /* Pods__Wolfishing.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -345,6 +363,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C5465F3056D74FF56EA25D1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				012E4EA458A7BA1A09A6B266 /* Pods--Wolfishing.debug.xcconfig */,
+				DF8AC383B537B6C57F0EF3CB /* Pods--Wolfishing.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,9 +379,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4ED7D56E1EC4028500A4F561 /* Build configuration list for PBXNativeTarget "-Wolfishing" */;
 			buildPhases = (
+				136B5FB5AEF5E0E155DA4937 /* [CP] Check Pods Manifest.lock */,
 				4ED7D5421EC4028500A4F561 /* Sources */,
 				4ED7D5431EC4028500A4F561 /* Frameworks */,
 				4ED7D5441EC4028500A4F561 /* Resources */,
+				2478427DAEAF70F214641299 /* [CP] Embed Pods Frameworks */,
+				088CED6117FFEBC4FE2467DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -457,6 +487,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		088CED6117FFEBC4FE2467DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods--Wolfishing/Pods--Wolfishing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		136B5FB5AEF5E0E155DA4937 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2478427DAEAF70F214641299 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods--Wolfishing/Pods--Wolfishing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4ED7D5421EC4028500A4F561 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -471,6 +549,7 @@
 				4E2798741EC54B9400CBFFBA /* ProfileChange.swift in Sources */,
 				4ED7D54A1EC4028500A4F561 /* AppDelegate.swift in Sources */,
 				4E2798711EC5498000CBFFBA /* HearderMyProfile.swift in Sources */,
+				4E87E9CC1EC987E900E2E6B6 /* DBprofile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +672,7 @@
 		};
 		4ED7D56F1EC4028500A4F561 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 012E4EA458A7BA1A09A6B266 /* Pods--Wolfishing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -602,6 +682,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "-Wolfishing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -615,6 +696,7 @@
 		};
 		4ED7D5701EC4028500A4F561 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF8AC383B537B6C57F0EF3CB /* Pods--Wolfishing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -624,6 +706,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "-Wolfishing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
